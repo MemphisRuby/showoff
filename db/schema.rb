@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150207005339) do
+ActiveRecord::Schema.define(version: 20150207010430) do
 
   create_table "events", force: true do |t|
     t.string   "name"
@@ -21,11 +21,15 @@ ActiveRecord::Schema.define(version: 20150207005339) do
     t.datetime "updated_at"
   end
 
+  add_index "events", ["name"], name: "udx_events_on_name", unique: true
+
   create_table "projects", force: true do |t|
     t.string   "name"
     t.text     "writeup"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "projects", ["name"], name: "udx_projects_on_name", unique: true
 
 end
