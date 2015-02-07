@@ -24,6 +24,10 @@ group :development, :test do
   gem 'pry-rails'
   gem 'sqlite3'
   gem 'foreman'
+
+
+  gem 'minitest-rails', '~> 2.1.1'
+  gem 'minitest-ar-assertions', :require => 'minitest_activerecord_assertions'
 end
 
 group :staging, :production do

@@ -48,6 +48,10 @@ GEM
     method_source (0.8.2)
     mime-types (2.4.3)
     minitest (5.5.1)
+    minitest-ar-assertions (0.1.1)
+    minitest-rails (2.1.1)
+      minitest (~> 5.4)
+      railties (~> 4.1)
     multi_json (1.10.1)
     pg (0.18.1)
     pry (0.10.1)
@@ -107,6 +111,8 @@ DEPENDENCIES
   active_model_serializers (~> 0.9.3)
   foreman
   jbuilder (~> 2.0)
+  minitest-ar-assertions
+  minitest-rails (~> 2.1.1)
   pg (~> 0.18.1)
   pry-rails
   puma (~> 2.11.0)
