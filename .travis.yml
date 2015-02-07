@@ -1,10 +1,3 @@
 language: ruby
 rvm:
 - 2.1.5
-deploy:
-  provider: heroku
-  api_key:
-    secure: A05WYCvu66FDOh/Bd1lJd9eY35sjLlRiJSVHn253Tnz12N0nD7eT2BGmJIxhw65k9lKm6cnWGunP0RbX7JVXslJdPwSq/MwHwIekhbI9g2TxGq/thUc7aL37eBZEWtdLS9tg00TOJKrwIwZTu3VzPYHjfNIL48sVRtCsFRhfKRM=
-  app: showoff-memphis
-  on:
-    repo: MemphisRuby/showoff
