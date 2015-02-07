@@ -5,9 +5,11 @@ ruby '2.1.5'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.9'
 
-gem 'pg'
+gem 'pg', '~> 0.18.1'
 
-gem 'puma'
+gem 'puma', '~> 2.11.0'
+
+gem 'active_model_serializers', '~> 0.9.3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
