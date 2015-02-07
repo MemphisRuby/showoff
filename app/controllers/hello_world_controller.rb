@@ -1,4 +1,4 @@
-class HelloWorldController < ActionController::Base
+class HelloWorldController < ApplicationController
   def index
     render json: 'hi'
   end
