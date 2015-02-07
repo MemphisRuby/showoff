@@ -1,8 +1,11 @@
 class HelloWorldController < ApplicationController
   def index
-    @projects = Project.all.limit(10)
-    @events   = Event.all.limit(10)
+    @groups = Group.all.limit(10)
+    @events = Event.all.limit(10)
 
-    render json: { projects: @projects, events: @events }
+    render json: {
+      groups: @groups.map{ |el| { id: el.id, name: el.name, projects: el.projects } },
+      events: @events.map{ |el| { id: el.id, name: el.name, projects: el.projects } },
+    }
   end
 end
