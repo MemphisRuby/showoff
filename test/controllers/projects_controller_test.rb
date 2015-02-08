@@ -12,5 +12,4 @@ class ProjectsControllerTest < ActionController::TestCase
     refute_empty response.body
     assert_equal response.content_type, 'application/json'
   end
-
 end
