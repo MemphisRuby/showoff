@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::API
+  include ActionController::Serialization
   before_filter :check_accept_format
 
   private
